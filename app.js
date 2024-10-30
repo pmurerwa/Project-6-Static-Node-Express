@@ -6,17 +6,17 @@ const app = express();
 app.set("view engine", "pug"); //Tell Express to use Pug as the view engine:
 app.use("/static", express.static(path.join(__dirname, "public"))); //Use express.static() to serve static files (CSS, images, JS files) from a folder named public
 
-//create a routers with express
+// Index route to render the Home page
 app.get("/", (req, res) => {
-  res.render("index", { projects: data });
+  res.render("index", { projects: data.projects });
 });
-
+// About route to render the About page
 app.get("/about", (req, res) => {
   res.render("about");
 });
-
+// Dynamic project routes based on project ID
 app.get("/project/:id", (req, res, next) => {
-  const projectId = parseInt(req.params.id, 10);
+  const projectId = req.params.id
   const project = data.projects.find((p) => p.id === projectId);
 
   if (project) {
