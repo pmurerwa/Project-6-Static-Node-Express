@@ -15,8 +15,8 @@ app.get("/about", (req, res) => {
   res.render("about");
 });
 // Dynamic project routes based on project ID
-app.get("/project/:id", (req, res, next) => {
-  const projectId = req.params.id
+app.get("/projects/:id", (req, res, next) => {
+  const projectId = parseInt(req.params.id);
   const project = data.projects.find((p) => p.id === projectId);
 
   if (project) {
@@ -44,6 +44,7 @@ app.use((req, res, next) => {
       err.message = err.message || 'Server Error';
       res.status(err.status).render('error', { err });
     }
+    console.error(`Error ${err.status}: ${err.message}`);
   });  
 
 // Start the server
