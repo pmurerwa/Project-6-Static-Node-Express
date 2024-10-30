@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content
+  .error-container
+    h1 Error #{err.status || 500}
+    p #{err.message || "An unexpected error occurred."}
+    if err.stack
+      pre= err.stack
+
+    a(href='/') Back to Home

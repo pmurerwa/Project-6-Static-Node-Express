@@ -1,0 +1,49 @@
+{
+    "projects": [
+      {
+        "id": 0,
+        "project_name": "Random Quote Generator",
+        "description": "Displays a random quote with a random background color every 10 seconds or each time the button is clicked.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://pmurerwa.github.io/Project-One-Random-Quote-Generator/",
+        "github_link": "https://github.com/pmurerwa/Project-One-Random-Quote-Generator",
+        "image_urls": ["/images/randomquote1.png", "/images/randomquote2.png"]
+      },
+      {
+        "id": 1,
+        "project_name": "Data Pagination and Filtering",
+        "description": "A page that shows 12 employees.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://pmurerwa.github.io/Project-two-Pagination-Unit2/",
+        "github_link": "https://github.com/pmurerwa/Project-two-Pagination-Unit2",
+        "image_urls": ["/images/datapagination1.png", "/images/datapagination2.png"]
+      },
+      {
+        "id": 2,
+        "project_name": "Interactive Form",
+        "description": "An interactive form for an event registration.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://pmurerwa.github.io/Project-3-Interactive-Form/",
+        "github_link": "https://github.com/pmurerwa/Project-3-Interactive-Form",
+        "image_urls": ["/images/interactiveform1.png", "/images/interactiveform2.png"]
+      },
+      {
+        "id": 3,
+        "project_name": "The OOP Word Show Game",
+        "description": "Objected Oriented Word game using random phrases.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://pmurerwa.github.io/Project-4-OOP-Game-Show-App/",
+        "github_link": "https://github.com/pmurerwa/Project-4-OOP-Game-Show-App",
+        "image_urls": ["/images/oopgame_1.png", "/images/oopgame2.png"]
+      },
+      {
+        "id": 4,
+        "project_name": "Public API Requests",
+        "description": "Used RandomUser API to create a 12 random people employee directory.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://pmurerwa.github.io/Project5-Public-API-Requests/",
+        "github_link": "https://github.com/pmurerwa/Project5-Public-API-Requests",
+        "image_urls": ["/images/apirequest1.png", "/images/apirequest2.png"]
+      }
+    ]
+}
